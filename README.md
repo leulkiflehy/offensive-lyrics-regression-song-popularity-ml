@@ -1,4 +1,4 @@
-# 🎤 Offensive Lyrics Classification Using Machine Learning & NLP
+# Offensive Lyrics Classification Using Machine Learning & NLP
 
 This project uses Natural Language Processing (NLP) and machine learning to classify whether song lyrics contain offensive or toxic language. Using a dataset with over **900,000 records**, the project explores text preprocessing, feature extraction, and predictive modeling to identify harmful or offensive content in music lyrics.
 
@@ -6,7 +6,7 @@ This project demonstrates my ability to work with large datasets, perform text a
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The goal of this project is to:
 - Analyze a large dataset of music lyrics  
@@ -19,7 +19,7 @@ The model focuses on **logistic regression**, a simple and interpretable baselin
 
 ---
 
-## 📚 Dataset
+## Dataset
 
 **Source:** Kaggle — *Music Dataset (900k rows)*  
 Includes fields such as:
@@ -32,7 +32,7 @@ Includes fields such as:
 
 ---
 
-## 🧠 Methods & Techniques Used
+## Methods & Techniques Used
 
 ### **Text Processing**
 - Lowercasing  
@@ -49,7 +49,7 @@ Includes fields such as:
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 **Programming:**
 - Python  
 - Jupyter Notebook  
@@ -63,7 +63,7 @@ Includes fields such as:
 
 ---
 
-## 📈 Key Results
+## Key Results
 
 - Built and trained a logistic regression model to classify offensive language  
 - Achieved strong accuracy (see notebook for exact results)  
@@ -72,13 +72,13 @@ Includes fields such as:
 
 ---
 
-## 📁 Files in This Repository
+## Files in This Repository
 - **project_final.ipynb** – Full notebook: cleaning, feature extraction, modeling, and evaluation  
 - **README.md** – Project documentation  
 
 ---
 
-## 🚀 How to Run the Notebook
+## How to Run the Notebook
 
 1. Download or clone this repository  
 2. Install Python dependencies (pandas, numpy, scikit-learn, etc.)  
@@ -87,7 +87,7 @@ Includes fields such as:
 
 ---
 
-## 👨‍💻 Author  
+## Author  
 **Leul Kifle**  
 Data Science Student – George Mason University  
 📧 lkifle@gmu.edu  
