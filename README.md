@@ -82,5 +82,10 @@ Python, Pandas, NumPy, NLTK, Matplotlib, Seaborn, WordCloud
 Profanity in hip-hop lyrics does not appear to influence Spotify popularity.  
 The results suggest that lyrical content alone is not a strong predictor of streaming performance, and future work could explore artist-level metadata or more advanced NLP models.
 
+## Author
+
+**Leul Kifle**  
+George Mason University  
+Computational Data Science
 
 
