@@ -1,96 +1,86 @@
-# Offensive Lyrics Classification Using Machine Learning & NLP
+# Profanity in Hip-Hop Lyrics and Its Relationship to Spotify Popularity
 
-This project uses Natural Language Processing (NLP) and machine learning to classify whether song lyrics contain offensive or toxic language. Using a dataset with over **900,000 records**, the project explores text preprocessing, feature extraction, and predictive modeling to identify harmful or offensive content in music lyrics.
-
-This project demonstrates my ability to work with large datasets, perform text analysis, and build interpretable machine learning models.
+This project analyzes whether profanity in hip-hop lyrics affects a song’s popularity on Spotify. Using a subset of a large lyrics dataset, the study focuses on profanity frequency, normalized profanity levels, and their statistical relationship with popularity scores.
 
 ---
 
-## Project Overview
+## 1. Overview
 
-The goal of this project is to:
-- Analyze a large dataset of music lyrics  
-- Clean and preprocess text data  
-- Extract meaningful features from the lyrics  
-- Build a machine learning model to classify offensive language  
-- Evaluate model performance using accuracy and confusion matrix  
+The goal of this project is to determine whether higher profanity usage correlates with higher (or lower) popularity.  
+The analysis:
 
-The model focuses on **logistic regression**, a simple and interpretable baseline for text classification.
+- Focuses strictly on profanity, not hate speech  
+- Uses recent hip-hop tracks (2020–2024)  
+- Applies rule-based profanity detection and lyric preprocessing  
 
 ---
 
-## Dataset
+## 2. Dataset
 
-**Source:** Kaggle — *Music Dataset (900k rows)*  
-Includes fields such as:
-- Lyrics  
-- Artist  
-- Genre  
-- Popularity  
-- Contextual metadata  
-- Offensive label (target variable)
+**Source:** “900K+ Spotify Songs with Lyrics, Emotions & More” (Kaggle)  
+**Sample:** 5,000 randomly selected hip-hop tracks  
 
----
+Features used:
 
-## Methods & Techniques Used
-
-### **Text Processing**
-- Lowercasing  
-- Removing punctuation  
-- Stopword removal  
-- Tokenization  
-- TF-IDF vectorization  
-
-### **Machine Learning**
-- Logistic Regression  
-- Train/Test Split  
-- Model accuracy scoring  
-- Confusion Matrix Evaluation  
+- song title  
+- artist  
+- lyrics  
+- genre  
+- Spotify popularity  
 
 ---
 
-## Tools & Libraries
-**Programming:**
-- Python  
-- Jupyter Notebook  
+## 3. Methods
 
-**Libraries:**
-- pandas  
-- numpy  
-- scikit-learn  
-- matplotlib  
-- seaborn  
+### Data Cleaning
+- Removed missing lyrics/popularity  
+- Lowercased text, removed tags like `[Verse]`  
+- Tokenized lyrics  
+- Removed punctuation, stopwords, and leftover contractions  
 
----
+### Profanity Detection
+- Loaded profanity list from `badwords_en.txt`  
+- Counted profanity occurrences  
+- Calculated normalized profanity (per 100 words)  
 
-## Key Results
-
-- Built and trained a logistic regression model to classify offensive language  
-- Achieved strong accuracy (see notebook for exact results)  
-- Visualized confusion matrix for model evaluation  
-- Extracted trends from the dataset's text features  
-
----
-
-## Files in This Repository
-- **project_final.ipynb** – Full notebook: cleaning, feature extraction, modeling, and evaluation  
-- **README.md** – Project documentation  
+### Analysis
+- Word frequency visualizations  
+- Histogram of profanity counts  
+- Popularity comparison between clean and profane songs  
+- Correlation heatmap  
+- Scatterplot: profanity vs. popularity  
 
 ---
 
-## How to Run the Notebook
+## 4. Key Findings
 
-1. Download or clone this repository  
-2. Install Python dependencies (pandas, numpy, scikit-learn, etc.)  
-3. Open the notebook in Jupyter Notebook / JupyterLab  
-4. Run all cells to reproduce the analysis  
+- No meaningful correlation between profanity and Spotify popularity  
+- Normalized profanity also showed no predictive value  
+- The null hypothesis is supported: profanity does not impact popularity in this dataset  
+
+Popularity appears more influenced by external factors such as artist reputation, playlisting, and marketing.
 
 ---
 
-## Author  
-**Leul Kifle**  
-Data Science Student – George Mason University  
-📧 lkifle@gmu.edu  
-📍 Fairfax, VA  
+## 5. Limitations
 
-Feel free to explore more of my projects on GitHub!
+- Spotify popularity is shaped by many hidden variables  
+- Profanity detection is rule-based and not context-aware  
+- The study is correlational, not causal  
+- Sample limited to hip-hop and 5,000 tracks  
+
+---
+
+## 6. Tools Used
+
+Python, Pandas, NumPy, NLTK, Matplotlib, Seaborn, WordCloud
+
+---
+
+## 7. Conclusion
+
+Profanity in hip-hop lyrics does not appear to influence Spotify popularity.  
+The results suggest that lyrical content alone is not a strong predictor of streaming performance, and future work could explore artist-level metadata or more advanced NLP models.
+
+
+
